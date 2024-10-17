@@ -30,7 +30,7 @@ return new Promise( function(resolve,reject){//resolve se idhar aayega aur fir g
     //  let all=data.results;
      //in the data only resluts has been mentioned
      displayuser();
-    //  resolve(usersdata);//resolve is called and data obtained is passed
+     resolve(usersdata);//resolve is called and data obtained is passed
     })
 
    .catch(function(error){//agar during the process of fetching error occurs
@@ -67,11 +67,11 @@ function displayuser(){
 function displaydetails( firstname,lastname,age,phone,city,country,gender,email)
 {
   alert(
-    'Name: ' + firstname + ' ' + lastname + '\n' +
+    'Name: ' + firstname + ' ' + lastname +'\n'+
        'Age: ' + age + '\n' +
-        'Phone: ' + phone + '\n' +
-            'Location: ' + city + ', ' + country + '\n' +
-            'Gender: ' + gender + '\n' +
+        'Phone: ' + phone +'\n' +
+            'Location: '+ city +', ' + country +'\n'+
+            'Gender: '+ gender +'\n' +
             'Email: ' + email
   ) 
 }
