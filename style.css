@@ -1,0 +1,101 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+     /* background-image: url('https://source.unsplash.com/1600x900/?abstract'); /* Add a background image */
+    /* background-size: cover;   */ 
+   
+    color: #ffffff; 
+    font-family: 'Arial', sans-serif; 
+    /* transition: background-color 0.5s ease; */
+   
+}
+/* @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+header{
+    
+    margin-top:30px ;
+    text-align: center;
+}
+.heading{
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #0a0909;
+    text-align: center;
+    font-size: 40px;}
+
+    .btn{
+      
+    display: flex;
+    justify-content: center;
+    }
+.button{
+    text-align: center;
+    border-radius: 40%;
+    width: 6rem;
+    height: 5 rem;
+    transition: all;
+    transition-duration: 0.3s;
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(112, 112, 117);
+}
+.button:hover{
+    background-color:  rgb(84, 84, 180);
+}
+.newbutton{
+    padding: 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 4px solid white;
+    color: #ffffff;
+    background-color: rgb(64, 64, 82);
+    transition: all;
+    border-radius: 30px;
+    transition:transform 0.3s; ;
+}
+.newbutton:hover{
+    transform: scale(1.1);
+    background-color: rgb(84, 84, 180);
+}
+img{
+    border: 2px solid grey;
+    border-radius: 30%;
+    width: 10rem;
+    height: 10rem;
+    transition: transform 0.3s; 
+
+}
+img:hover {
+    transform: scale(1.2); 
+}
+
+#list{
+    text-align: center;
+    /* display: flex; */
+    /* height:530rem; */
+    /* display: inline-block; */
+    /* padding: 0px; */
+  /* width:25% ; */
+/* height:auto; */
+}
+.profiles{
+   margin: 20px;
+    /* paddi */
+    height: 18rem;
+    width: 18rem;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.profiles:hover{
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
