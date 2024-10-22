@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more user details</title>
+</head>
+<body>
+    
+    <h1>MORE USER DETAILS</h1>
+    <div id="details"></div>
+ <button  onclick="goback()"class="back"> GO TO PREVIOUS PAGE</button>
+
+<script>
+     function goback() {
+            window.history.back(); // Take the user back
+        }
+
+      const userdetails=JSON.parse(localStorage.getItem('selecteduser'));
+
+if(userdetails)//check if data present or not
+{
+    const dcontain=document.getElementById('details');
+    var content = '<img src="' + userdetails.picture.large + '">';
+            content += '<p> <strong> Name:</strong> ' + userdetails.name.first + ' ' + userdetails.name.last + '</p>';
+            content += '<p> <strong> Age:</strong> ' + userdetails.dob.age + '</p>';
+            content += '<p> <strong> Phone:</strong> ' + userdetails.phone + '</p>';
+            content += '<p> <strong> Location:</strong> ' + userdetails.location.city + ', ' + userdetails.location.country + '</p>';
+            content += '<p> <strong> Gender:</strong> ' + userdetails.gender + '</p>';
+            content += '<p> <strong> Email:</strong> ' + userdetails.email + '</p>';
+            
+            // Set the innerHTML of the container
+        dcontain.innerHTML = content;
+        } else {
+            document.getElementById('details').innerHTML = 'No user details found.';
+        }
+
+</script>
+</body>
+</html>

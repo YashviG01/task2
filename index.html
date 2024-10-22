@@ -11,21 +11,51 @@
 <body>
     
     <header>
+
+
+        <div id="loading" style="display:none;" >
+            <p>Loading profiles...</p>
+        </div>
+        
         <div class="heading">RANDOM USER PROFILES</div>
+   <div class="filtersection">
+
+        <input type="text" id="namefilter" placeholder="Filter by Name">
+<select id="genderfilter" class="input-field">
+  <option value="">All Genders</option>
+  <option value="male">Male</option>
+  <option value="female">Female</option>
+</select>
+<select id="agefilter" class="input-field">
+  <option value="">All Ages</option>
+  <option value="18-25">18-25</option>
+  <option value="26-35">26-35</option>
+  <option value="36-45">36-45</option>
+  <option value="46+">46+</option>
+</select>
+<button id="filterbutton">Apply Filters</button>
+</div>
+        <!-- <div id="filtersection">
+            <input type="text" id="namefilter" placeholder="Search by name" />
+            <button id="filterbutton">Filter</button>
+        </div> -->
     </header>
 
 
     <div id="list">
 
     </div>
+
 <div class="btn">
     <button class="button" id="button">SHOW PROFILES</button>
 
 </div>
 
+<div id="pagecontrols"></div>
 
 
 
-<script src="script.js "></script>
+
+<script src="script.js"></script>
 </body>
 </html>
